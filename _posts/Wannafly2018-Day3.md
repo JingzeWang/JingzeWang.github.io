@@ -1,0 +1,130 @@
+---
+layout: post
+title:  "CCPC-Wannafly Winter Camp 2018 Day3"
+date:   2019-1-22
+desc: "为什么我这么菜"
+keywords: none
+categories: [Acm]
+tags: [Wannafly Winter 2018]
+icon: icon-html
+---
+
+# 
+
+## A
+
+### 题解：
+
+```
+unsolved  
+```
+
+## B
+
+### 题解：
+
+分类讨论，二分，使得左边的角等于右边的角
+
+```
+unsolved
+```
+
+## D
+
+### 题解：
+
+生成树状压dp
+
+dp\[s]\[i] 枚举子树
+
+s为根，经过点数为i
+
+边贡献和的最大值
+
+dp\[s]\[i]=dp\[T]\[j]+dp\[S-T]\[i]+\|T\|\*\|n-T\|\*w\[i]\[j]
+
+```
+unsolved
+```
+
+## E
+
+### 题解：
+
+贪心+树形dp
+
+```
+unsolved
+```
+
+## F
+
+迪利克雷卷积
+
+杜教筛
+
+### 题解：
+
+```
+unsolved
+```
+
+## G
+
+```c++
+//Time: 27ms Memory: 4MB
+#include <bits/stdc++.h>
+using namespace std;
+int p[100005];
+int vis[100005];
+int main()
+{
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
+	memset(p, 0, sizeof(p));
+	memset(vis, 0, sizeof(vis));
+	int n, tot = 1, temp;
+	cin >> n;
+	cin >> temp;
+	int m = temp;
+	p[temp - 1] = tot, vis[tot++] = 0;
+	for(int i = 1; i < n; ++i)
+	{
+		cin >> temp;
+		if(temp < m) m = temp, p[temp - 1] = tot, vis[tot++] = 0;
+	}
+	for(int i = 0; i < n; ++i)
+	{
+		if(!p[i]) p[i] = tot++;
+	}
+	for(int i = 0; i < n - 1; ++i) cout << p[i] << " ";
+	cout << p[n - 1] << endl;
+}
+```
+
+## H
+
+### 题解：
+
+```
+unsolved
+```
+
+## I
+
+### 题解：
+
+并查集（参考例题：食物链）
+
+```
+
+```
+
+## J
+
+### 题解：
+
+```
+unsolved
+```
