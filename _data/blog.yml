@@ -12,6 +12,9 @@
 - name: Life
   href: /life/
 
+- name: C++
+  href: /c++/
+
 # Don't display donation page: change donation to off at file '_config.yml'
 - name: Donate
   href: /donate/
