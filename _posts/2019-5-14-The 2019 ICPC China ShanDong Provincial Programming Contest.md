@@ -111,6 +111,12 @@ int main() {
 
 ## [F - Stones in the Bucket](https://cn.vjudge.net/problem/ZOJ-4118)
 
+给定n个容器，里面分别装有石头，每次进行操作可以将一块石头从一个容器转移到另一个容器，或是将其移除
+
+求最少的操作数，使所有容器中石头数相同
+
+求个平均值就解了
+
 ```c++
 #include <bits/stdc++.h>
 using namespace std;
