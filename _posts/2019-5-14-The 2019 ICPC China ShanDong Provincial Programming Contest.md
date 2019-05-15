@@ -151,7 +151,6 @@ int main() {
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-ll pow2[31];
 ll qpow(ll x, ll y, ll mod) {
     ll res = 1;
     while(y) {
@@ -165,8 +164,6 @@ int main() {
     ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
     int t;
     cin >> t;
-    pow2[0] = 1;
-    for(int i = 1; i < 31; ++i) pow2[i] = pow2[i - 1] * 2;
     while(t--) {
         int a, p;
         cin >> a >> p;
@@ -176,9 +173,9 @@ int main() {
             else if(p == 2) cout << 2 << endl;
             else {
                 ll sum = 0;
-                for(int i = 1; i < p; ++i) if(qpow(a, i, pow2[p]) == qpow(i, a, pow2[p])) ++sum;
-                ll q = pow2[p / a + (p % a > 0)];
-                sum += (pow2[p] - p) / q + (p % q == 0 || pow2[p] % q == 0);
+                for(int i = 1; i < p; ++i) if(qpow(a, i, (1 << p)) == qpow(i, a, (1 << p))) ++sum;
+                ll q = 1 << (p / a + (p % a > 0));
+                sum += ((1 << p) - p) / q + (p % q == 0 || (1 << p) % q == 0);
                 cout << sum << endl;
             }
         }
