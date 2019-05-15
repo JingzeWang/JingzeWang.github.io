@@ -30,7 +30,13 @@ str1 = re.findall(r"base64,(.+?)\" /></p>", str)[0]
 str2 = base64.b64decode(str1)
 ```
 
-然后，将所有字符进行排序
+> 字符排序
+
+x数组代表字符在x轴的位置
+
+y数组代表字符的值
+
+打包起来对x数组排序即可
 
 ``` python
 x = re.findall(r"x=\"(.+?)\"", str2)
@@ -43,6 +49,8 @@ x_new, y_new = zip(*Z)
 #print y_new
 payload = ''.join(y_new)
 ```
+
+> payload提交
 
 尝试一发提交以后发现...输入的验证码直接在网址的最后`?code=114514`
 
