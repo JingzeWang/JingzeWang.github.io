@@ -9,7 +9,7 @@ tags: [sql,web]
 icon: icon-html
 ---
 
-# I Am Blind~~（我，星级玩家）~~
+# I Am Blind~~（我，星际玩家）~~
 
 题目链接: [http://pwn1.blue-whale.me:23335/](http://pwn1.blue-whale.me:23335/)
 
