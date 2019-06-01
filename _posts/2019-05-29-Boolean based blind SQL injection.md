@@ -108,11 +108,11 @@ def login(_username, _password):
 
 - -u 后接url，指定访问的地址
 
-- --data
+- \-\-data
 
   后面接参数表，用于POST方法
 
-- --eval
+- \-\-eval
 
   设定由某个参数或多个参数决定的变量，如本题**signature**
 
@@ -120,19 +120,19 @@ def login(_username, _password):
 --eval="import hashlib;signature=hashlib.sha1(username+password).hexdigest()"
 ```
 
-- --current-db
+- \-\-current-db
 
   获取当前数据库名
 
-- --tables
+- \-\-tables
 
   获取数据表名
 
-- --columns
+- \-\-columns
 
   获取字段名
 
-- --dump
+- \-\-dump
 
   获取字段值
 
