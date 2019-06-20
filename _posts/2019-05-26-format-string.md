@@ -4,7 +4,7 @@ title:  "格式化字符串漏洞"
 date:   2019-05-26
 desc: "苟利国家生死以,岂因祸福避趋之"
 keywords: none
-categories: [Blue-whale]
+categories: [Blue-whale,Pwn]
 tags: [pwn,二进制]
 icon: icon-html
 ---

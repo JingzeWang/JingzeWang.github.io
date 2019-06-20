@@ -4,7 +4,7 @@ title:  "RapidTyping"
 date:   2019-05-15
 desc: "苟利国家生死以,岂因祸福避趋之"
 keywords: none
-categories: [Blue-whale]
+categories: [Blue-whale,Web]
 tags: [python,web]
 icon: icon-html
 ---
