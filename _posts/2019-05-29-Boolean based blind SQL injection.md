@@ -4,7 +4,7 @@ title:  "布尔盲注的白给式利用"
 date:   2019-05-29
 desc: "苟利国家生死以,岂因祸福避趋之"
 keywords: none
-categories: [Blue-whale,Web]
+categories: [CTF,Web]
 tags: [sql,web]
 icon: icon-html
 ---
